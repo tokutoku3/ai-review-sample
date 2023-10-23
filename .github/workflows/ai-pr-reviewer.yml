@@ -10,7 +10,7 @@ on:
     paths:
       - 'ai-pr-reviewer-sample/**'
   pull_request_review_comment:
-    types: [created, edited]
+    types: [created]
     paths:
       - 'ai-pr-reviewer-sample/**'
 
