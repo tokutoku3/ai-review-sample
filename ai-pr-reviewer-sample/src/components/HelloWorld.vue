@@ -22,7 +22,7 @@ const countText = computed(() => {
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
-    <p>{{ countText }}</p>
+    <p :class="countText">{{ countText }}</p>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
@@ -46,5 +46,20 @@ const countText = computed(() => {
 <style scoped>
 .read-the-docs {
   color: #888;
+}
+
+.hoge {
+  color: red;
+  font-size: 24px;
+}
+
+.fuga {
+  color: blue;
+  font-size: 18px;
+}
+
+.piyo {
+  color: green;
+  font-size: 12px;
 }
 </style>
